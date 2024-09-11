@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecommerce website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- nav starts here -->
+
+  <i class="fa-solid fa-bars fa-2x" id="menu-icon"></i>
+  <nav id="menu" class="hidden">
+    <ul id="nav__upper">
+      <li class="nav__list"><a href="index.html" class="nav__link">Home</a></li>
+      <li class="nav__list"><a href="register.html" class="nav__link">Register</a></li>
+      <li class="nav__list"><a href="login.html" class="nav__link">Login</a></li>
+      <li class="nav__list"><a href="index.html" class="nav__link">Logout</a></li>
+      <li class="nav__list"><a href="contact.html" class="nav__link">Contact</a></li>
+      <li class="nav__list"><a href="profile.html" class="nav__link"><img src="profile.jpg" class="profile__icon" alt="profile icon"></li></a>
+    </ul>
+
+    <ul class="nav__lower">   
+      <li class="nav__list">
+        <a href="index.html" class="nav__list nav__brand">
+          Gokul's Express
+        </a>
+      </li>
+
+      <li class="nav__list">
+        <a href="cart.html" class="nav__list nav__link">
+          <span>
+            <i class="fa-solid fa-cart-shopping fa-beat"></i>
+            Cart 2 Products -$124.40
+          </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+
+  <!-- nav ends here -->
+  <section id="cardss" class="cardss__center">
+  <header>
+    <marquee behavior="" direction="">50% Sales going on</marquee>
+  </header>
+
+  <div class="cards">
+    <div class="card">
+      <i class="fa-solid fa-truck"></i>
+      <p class="card__desc">Shipping within 7 days</p>
+    </div>
+    <div class="card">
+      <i class="fa-regular fa-message"></i>
+      <p class="card__desc">Support 24/7</p>
+    </div>
+    <div class="card">
+      <i class="fa-regular fa-credit-card"></i>
+      <p class="card__desc">Safe Payment</p>
+    </div>
+  </div>
+</section>
+<main class="flex-around"> 
+    <div class="sidebar">
+      <section class="categories-section">
+        <h2 class="section-title">Categories</h2>
+      <ul class="list">
+        <li class="listitem">
+          <input type="checkbox" id="phones" name="categories">
+          <label for="phones">Phones</label>
+        </li>
+        <li class="listitem">
+          <input type="checkbox" id="tablets" name="categories">
+          <label for="tablets">Tablets</label>
+        </li>
+        <li class="listitem">
+          <input type="checkbox" id="television" name="categories">
+          <label for="television">Television</label>
+        </li>
+        <li class="listitem">
+          <input type="checkbox" id="computers" name="categories">
+          <label for="computers">Computers</label>
+        </li>
+        <li class="listitem">
+          <input type="checkbox" id="headphones" name="categories">
+          <label for="headphones">Headphones</label>
+        </li>
+      </ul>
+    </section>
+    
+
+    <section class="price-range">
+      <h2 class="section-title">Price Range</h2>
+      <ul class="list">
+        <li class="listitem">
+          <input type="radio" id="price1" name="prices" value="[0,20]">
+          <label for="price1">$0-$20</label>
+        </li>
+        <li class="listitem">
+          <input type="radio" id="price2" name="prices" value="[21,50]">
+          <label for="tablets">$21-$50</label>
+        </li>
+        <li class="listitem">
+          <input type="radio" id="price3" name="prices" value="[51,100]">
+          <label for="price3">$51-$100</label>
+        </li>
+        <li class="listitem">
+          <input type="radio" id="price4" name="prices" value="[101,500]">
+          <label for="price4">$101-$500</label>
+        </li>
+        <li class="listitem">
+          <input type="radio" id="price5" name="prices"value="[500+]">
+          <label for="price5">$500+ above</label>
+        </li>
+      </ul>
+    </section>
+
+    <section class="shipping">
+      <h2 class="section-title">Shipping</h2>
+      <ul class="list">
+        <li class="listitem">
+          <input type="radio" id="free" name="options">
+          <label for="free">Free</label>
+        </li>
+        <li class="listitem">
+          <input type="radio" id="paid" name="options">
+          <label for="paid">paid</label>
+        </li>
+    </section>
+  </div>
+    <div class="main-content">
+      <section class="action flex-around">
+        <div class="action__sort">
+          <label for="sort">Sort By:</label>
+          <select name="sort" id="sort">
+            <option value="sold">Most sold products</option>
+            <option value="recent">Recent products</option>
+            <option value="rated">most rated product</option>
+            <option value="trend">Trending products</option>
+          </select>
+        </div>
+        <div class="action__search">
+          <input type="text" placeholder="search product">
+          <button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+      </section>
+
+      <section class="products">
+        <article class="product-cardsss">
+            <img src="product1.jpeg" alt="product1">
+
+            <div class="product__body" ></div>
+        </article>
+     
+        </div>
+      </section>
+    </div>
+</main>
+
+
+    
+
+
+
+ <footer class="footer">
+  <div>
+    <label for="subscribe">Subscribe to Newsletter</label>
+    <input type="email" id="subscribe" name="subscribe" placeholder="your Email Address">
+    <button class="btn btn-subscribe">Subscribe</button>
+  </div>
+
+  <div>
+    <p>&copy; Copyright 2023 Gokul's Express. All Rights reserved</p>
+  </div>
+  
+ </footer>
+  <script src="index.JS"></script>
+</body>
+</html>
